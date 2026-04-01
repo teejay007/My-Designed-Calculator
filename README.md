@@ -1,2 +1,162 @@
-# My-Designed-Calculator
-Design for a calculator 
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEEJAY CALCULATOR</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial;
+    background:#1b1b1b;
+}
+
+/* CAMOUFLAGE BACKGROUND */
+.calculator{
+    width:420px;
+    padding:20px;
+    border-radius:15px;
+
+    background:
+    radial-gradient(circle at 20% 20%,#556b2f 0%,transparent 25%),
+    radial-gradient(circle at 70% 40%,#2e3d1f 0%,transparent 30%),
+    radial-gradient(circle at 40% 80%,#3c4f25 0%,transparent 25%),
+    radial-gradient(circle at 80% 70%,#1f2b12 0%,transparent 30%),
+    #4b5320;
+
+    box-shadow:0 10px 30px black;
+}
+
+.display input{
+    width:100%;
+    height:60px;
+    font-size:26px;
+    text-align:right;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    padding:10px;
+    background:black;
+    color:#00ff9d;
+}
+
+.buttons{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:8px;
+}
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+    background:#2b2b2b;
+    color:white;
+}
+
+button:hover{
+    background:#3f5f2f;
+}
+
+/* color groups */
+
+.operator{background:#8b4513;}
+.function{background:#3b5323;}
+.memory{background:#2f4f4f;}
+.equal{background:#006400; grid-column:span 2;}
+.clear{background:#8b0000;}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="calculator">
+
+<h1 style="border: #000000; border-radius: 1px; color: white; position: relative; padding: 10px;">TEEJAY</h1>
+
+<div class="display">
+<input type="text" placeholder="0">
+</div>
+
+<div class="buttons">
+
+<!-- MEMORY -->
+<button class="memory">MC</button>
+<button class="memory">MR</button>
+<button class="memory">M+</button>
+<button class="memory">M-</button>
+<button class="clear">AC</button>
+<button>DEL</button>
+
+<!-- TRIG -->
+<button class="function">sin</button>
+<button class="function">cos</button>
+<button class="function">tan</button>
+<button class="function">sin⁻¹</button>
+<button class="function">cos⁻¹</button>
+<button class="function">tan⁻¹</button>
+
+<!-- LOG -->
+<button class="function">log</button>
+<button class="function">ln</button>
+<button class="function">eˣ</button>
+<button class="function">10ˣ</button>
+<button class="function">xʸ</button>
+<button class="function">x²</button>
+
+<!-- ROOTS -->
+<button class="function">√</button>
+<button class="function">∛</button>
+<button class="function">1/x</button>
+<button class="function">|x|</button>
+<button class="function">n!</button>
+<button>%</button>
+
+<!-- CONSTANTS -->
+<button>π</button>
+<button>e</button>
+<button>(</button>
+<button>)</button>
+<button>±</button>
+<button class="operator">÷</button>
+
+<!-- NUMBERS -->
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button class="operator">×</button>
+<button class="operator">^</button>
+<button>DEG</button>
+
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button class="operator">−</button>
+<button>RAD</button>
+<button>EXP</button>
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button class="operator">+</button>
+<button>.</button>
+<button>Ans</button>
+
+<button>0</button>
+<button>00</button>
+<button class="equal">=</button>??
+
+</div>
+</div>
+
+</body>
+</html>
